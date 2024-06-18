@@ -2,6 +2,8 @@
 <h3 align="center">Computer Engineering student with Bioengineering background</h3>
 
 
+![](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3ZlZmQ2Nmwwd3BkNXBjdTBxd3RoZmMwMjVsYnQ2bDBmZjBpaWx6eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/r6vs6u9NngyiANYCRI/giphy.webp)
+
 
  I’m currently learning **Machine Learning and Deep Learning Models**
 
