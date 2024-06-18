@@ -1,16 +1,13 @@
 <h1 align="center">Hi 👋, I'm Yusuf Aktaş</h1>
-<h3 align="center">Computer Engineering student with Bioengineering background</h3>
 
 
 ![](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3ZlZmQ2Nmwwd3BkNXBjdTBxd3RoZmMwMjVsYnQ2bDBmZjBpaWx6eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/r6vs6u9NngyiANYCRI/giphy.webp)
 
 
- I’m currently learning **Machine Learning and Deep Learning Models**
+ I’m currently learning the concepts of **Machine Learning and Deep Learning**
 
 
 
-<div> <a href="https://www.linkedin.com/in/https://www.linkedin.com/in/yusuf-aktass/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-<a href="https://github.com/yusuf4ktas" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
 </div><h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/https://www.linkedin.com/in/yusuf-aktass/" target="blank"><img align="center" src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/yusuf-aktass/" height="30" width="40" /></a></p>
