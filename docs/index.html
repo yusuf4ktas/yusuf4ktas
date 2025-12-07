@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yusuf Aktaş | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Yusuf Aktaş, a Computer Engineering Student." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- ========== Header / Nav ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">Yusuf<span>Aktaş</span></a>
+
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact" class="btn btn-small">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== Hero ========== -->
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Hi, I'm</p>
+          <h1>Yusuf Aktaş</h1>
+          <p class="hero-subtitle">A <span class="accent">3rd Year Computer Engineering Student</span> based in Istanbul</p>
+          <p class="hero-description">
+            I build projects to solve real-world problems. Currently interested in
+            <strong>Machine Learning, Cyber Security, Full-Stack Development</strong>.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-media">
+        <img src="photo.png" alt="Yusuf Aktaş" class="profile-photo" />
+        <p class="hero-tagline">Available for freelance & full-time roles.</p>
+      </div>
+    </section>
+
+    <!-- ========== About ========== -->
+    <section id="about" class="section">
+      <div class="container section-inner two-column">
+        <div>
+          <h2>About</h2>
+          <p>
+            I'm a 3rd year Computer Engineering student. Studied Bioengineering for two years before switching to Computer Engineering.
+            Passionate about coding and technology, I love creating solutions that make a difference by combining the knowledge I gain everyday.
+            I enjoy searching, building and maintaning projects while always being open to look built projects from different angles to ensure the best product.
+          </p>
+          <p>
+            Over the past 3 years, I've worked on projects ranging from ACMG/AMP variant classification using Machine Learning Models, Flutter based chat application with different LLMs, Blockchain based dApps and more.
+            I'm always eager to learn new technologies and improve my skills.
+          </p>
+        </div>
+        <div class="about-details">
+          <ul>
+            <li><span>Location:</span> Istanbul, Turkey</li>
+            <li><span>Current Role:</span> Student @ Abdullah Gül University</li>
+            <li><span>Interests:</span> Cyber Security, Machine Learning, Full-Stack Development</li>
+            <li><span>Open to:</span> Full-time, Freelance, Remote</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Skills ========== -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <p class="section-intro">
+          A snapshot of technologies and tools I work with.
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML, CSS, JavaScript</li>
+              <li>React</li>
+              <li>Responsive Design</li>
+              <li>Accessibility</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>Backend</h3>
+            <ul>
+              <li>GoLang</li>
+              <li>Databases (MySQL)</li>
+              <li>Spring Boot</li>
+              <li>RestAPI</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>Tools & Workflow</h3>
+            <ul>
+              <li>Git & GitHub</li>
+              <li>Postman</li>
+              <li>Docker</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Projects ========== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="section-intro">
+          Selected work that highlights my experience and interests.
+        </p>
+
+        <div class="projects-grid">
+          <!-- Project Card 1 -->
+          <article class="project-card">
+            <div class="project-header">
+              <h3>ModelVerse</h3>
+              <span class="project-tag">Featured</span>
+            </div>
+            <p class="project-description">
+              It is a chat application in which users can interact with different LLMs such as Gemini, OpenAI and Mistral. Built by Flutter and used FireStore Database to store user credentials. It supports text and visual (only for Gemini) inputs and provides a seamless chat experience.
+            </p>
+            <ul class="project-meta">
+              <li>Role: Developer / Designer</li>
+              <li>Stack: Flutter, FireStore Database</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/yusuf4ktas/llm_project" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <!-- Project Card 2 -->
+          <article class="project-card">
+            <div class="project-header">
+              <h3>ChainTrack</h3>
+            </div>
+            <p class="project-description">
+                A Blockchain based dApp that allows users to track a history record of the car by only entering the VIN/licence plate number. Users can range as Registrar, Owner, Car Service and Insurance along with potential buyers.
+                Each role changes needs to be verified by private key, the application is built using Solidity, React, Truffle and Ganache on local ethereum network.
+            </p>
+            <ul class="project-meta">
+              <li>Role: Full Stack Developer</li>
+              <li>Stack: Solidity, React, Truffle, Ganache</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/yusuf4ktas/vehicle_history_blockchain" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article> 
+
+          <!-- Project Card 3 -->
+          <article class="project-card">
+            <div class="project-header">
+              <h3>PawFectMatch</h3>
+              <span class="project-tag">Featured</span>
+            </div>
+            <p class="project-description">
+                An ASP.NET based web application that helps users to find the animal shelters and pet from an adoption center. The application built in a MVC structurE, uses factory pattern and features are specific view for each animal, admin and user panels, request submission for adoption, displaying tips and informations for users.
+                The database is built by sticking relational database principals with proper normalization and relations between tables using MySQL.
+            </p>
+            <ul class="project-meta">
+              <li>Role: Developer / Designer</li>
+              <li>Stack: ASP.NET, MySQL </li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/yusuf4ktas/animal_shelter_application" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>   
+
+          <!-- Project Card 4 -->
+          <article class="project-card">
+            <div class="project-header">
+              <h3>Banking Backend Application</h3>
+              <span class="project-tag">Featured</span>
+            </div>
+            <p class="project-description">
+                It is a backend application for a banking system that ensures thread safe balance updates, protected endpoints, rate limiting, graceful shutdown, worker pool pattern and secure user authentication using JWT. Built with GoLang and uses MySQL for data storage. The application supports concurrent transactions, account management, and transaction history retrieval.
+                It runs on a multistage Docker environment with a MySQL image, Redis for caching, Prometheus and Grafana for monitoring.
+            </p>
+            <ul class="project-meta">
+              <li>Role: Developer</li>
+              <li>Stack: GoLang, MySQL, Docker </li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/yusuf4ktas/backend_project" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>    
+            <!-- Project Card 5 -->
+          <article class="project-card">
+            <div class="project-header">
+              <h3>TMDB Movie Application</h3>
+              <span class="project-tag">Featured</span>
+            </div>
+            <p class="project-description">
+                Its a frontend application that consumes TMDB API to display movies, TV shows and actors. Built with NextJS and TailwindCSS, the application features dynamic routing, server-side rendering, and responsive design. Users can search for movies, view details, and explore popular content.
+                Its containerized using Docker for easy deployment.
+            <ul class="project-meta">
+              <li>Role: Developer</li>
+              <li>Stack: NextJS, Docker </li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/yusuf4ktas/movie_search_application" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>  
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Experience ========== -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h2>Experience</h2>
+        <p class="section-intro">
+          Where I've worked and what I've focused on.
+        </p>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <h3>Artifical Intelligence Intern @ CTOlab</h3>
+            <p class="timeline-meta">12/2023 - 05/2024 · Remote</p>
+            <ul>
+              <li>Debugged and featured an application that improved user experience</li>
+              <li>Used Gitlab for version control along with heavy Git usage</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <h3>TEYDEB Project Intern </h3>
+            <p class="timeline-meta">10/2024 - 06/2025 · Remote</p>
+            <ul>
+              <li>Cleaned and prepared data for analysis</li>
+              <li>Built Machine Learning models using scikit-learn and tensorflow</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <h3>Software Developer Intern  @ Insider </h3>
+            <p class="timeline-meta">08/2025 - 09/2025 · Remote</p>
+            <ul>
+              <li>Learnt SaaS fundamentals along with OKRs and KPIs in agile environment and Jira demos</li>
+              <li>Built two projects as one frontend TMDB movie application and one as backend banking application</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Contact ========== -->
+    <section id="contact" class="section">
+      <div class="container contact-inner">
+        <div>
+          <h2>Contact</h2>
+          <p class="section-intro">
+            Want to collaborate or just say hi? Drop me a line.
+          </p>
+        </div>
+
+        <div class="contact-details">
+          <p>Email: <a href="yusuf4ktasx@gmail.com">yusuf4ktasx@gmail.com</a></p>
+          <p>
+            Social:
+            <a href="https://github.com/yusuf4ktas" target="_blank" rel="noreferrer">GitHub</a> ·
+            <a href="https://www.linkedin.com/in/yusuf-aktass/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== Footer ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Yusuf Aktaş. All rights reserved.</p>
+      <p class="footer-secondary">Built with HTML &amp; CSS.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const navToggle = document.querySelector(".nav-toggle");
+    const navList = document.querySelector(".nav-list");
+
+    if (navToggle && navList) {
+      navToggle.addEventListener("click", () => {
+        navList.classList.toggle("nav-open");
+        navToggle.classList.toggle("nav-toggle-open");
+      });
+    }
+  </script>
+</body>
+</html>
