@@ -40,7 +40,7 @@
           <p class="hero-subtitle">A <span class="accent">Computer Engineering Student</span> & Aspiring Software Engineer</p>
           <p class="hero-description">
             Passionate about <strong>Machine Learning, Cyber Security</strong>, and <strong>Full-Stack Development</strong>. 
-            I build scalable back-end systems and data-driven ML solutions for healthcare and finance.
+            I build scalable systems and data-driven ML solutions for healthcare and finance.
           </p>
           <div class="hero-actions">
             <a href="#projects" class="btn">View Projects</a>
@@ -62,7 +62,7 @@
             I am a third-year Computer Engineering student with a unique background in Bioengineering. This transition has fueled my interest in building intelligent systems that solve complex problems at the intersection of technology and biology.
           </p>
           <p>
-            I specialize in developing RESTful backends, full-stack applications, and predictive ML models. Whether it's optimizing clinical drug regimens or building decentralized applications, I enjoy the challenge of turning data into actionable insights.
+            I specialize in developing RESTful backends, full-stack applications, and predictive ML models. I enjoy the challenge of turning data into actionable insights, whether it's through clinical optimization or decentralized technologies.
           </p>
         </div>
         <div class="about-details">
@@ -84,14 +84,16 @@
             <h3>Programming</h3>
             <ul>
               <li>Python (Pandas, NumPy, Scikit-learn)</li>
-              <li>SQL, Go (Golang)</li>
+              <li>SQL (MySQL, PostgreSQL)</li>
               <li>C#, Java, JavaScript</li>
+              <li>Solidity</li>
             </ul>
           </div>
 
           <div class="skill-card">
             <h3>Machine Learning</h3>
             <ul>
+              <li>Logistic Regression, Decision Tree</li>
               <li>XGBoost, Random Forest</li>
               <li>LSTM, TabNet, LightGBM</li>
               <li>NLP (BioBERT), RAG Systems</li>
@@ -99,11 +101,12 @@
           </div>
 
           <div class="skill-card">
-            <h3>Backend & Tools</h3>
+            <h3>Frameworks & Tools</h3>
             <ul>
-              <li>REST APIs, Docker</li>
-              <li>PostgreSQL, MySQL, Redis</li>
-              <li>Git, CI/CD, Prometheus</li>
+              <li>React, Flutter</li>
+              <li>ASP.NET, FastAPI, Spring Boot</li>
+              <li>Docker, Git, Prometheus</li>
+              <li>Truffle, Ganache</li>
             </ul>
           </div>
         </div>
@@ -112,16 +115,16 @@
 
     <section id="projects" class="section">
       <div class="container">
-        <h2>Selected Projects</h2>
+        <h2>Projects</h2>
         <div class="projects-grid">
           
           <article class="project-card">
             <div class="project-header">
               <h3>Clinical Drug Optimizer</h3>
-              <span class="project-tag">Healthcare</span>
+              <span class="project-tag">Healthcare AI</span>
             </div>
             <p class="project-description">
-              Clinical support system using Integer Linear Programming (ILP) and NLP (BioBERT) to optimize multi-drug regimens and detect CYP450 metabolic conflicts.
+              Clinical support system using ILP and NLP (BioBERT) to optimize multi-drug regimens and detect CYP450 metabolic conflicts.
             </p>
             <ul class="project-meta">
               <li>Stack: Python, BioBERT, ILP</li>
@@ -130,27 +133,40 @@
 
           <article class="project-card">
             <div class="project-header">
-              <h3>AGU RAG Chatbot</h3>
-              <span class="project-tag">AI / LLM</span>
+              <h3>ModelVerse</h3>
+              <span class="project-tag">Mobile AI</span>
             </div>
             <p class="project-description">
-              Bilingual (EN/TR) RAG system using FastAPI and React, featuring 4-bit quantized local LLM deployment and ChromaDB for context-aware support.
+              Flutter chat application integrating Gemini, OpenAI, and Mistral. Supports multi-modal inputs and uses Firebase for authentication.
             </p>
             <ul class="project-meta">
-              <li>Stack: FastAPI, React, ChromaDB</li>
+              <li>Stack: Flutter, Firebase, LLM APIs</li>
             </ul>
           </article>
 
           <article class="project-card">
             <div class="project-header">
-              <h3>VTE Prediction Model</h3>
-              <span class="project-tag">ML</span>
+              <h3>ChainTrack</h3>
+              <span class="project-tag">Blockchain</span>
             </div>
             <p class="project-description">
-              LSTM-based risk prediction system using encrypted patient time-series data to forecast venous thrombosis risk with 82% accuracy.
+              Decentralized app (dApp) for vehicle history tracking. Uses Solidity smart contracts to verify events on an Ethereum network.
             </p>
             <ul class="project-meta">
-              <li>Stack: Python, LSTM, Cryptography</li>
+              <li>Stack: Solidity, React, Truffle</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <h3>AGU RAG Chatbot</h3>
+              <span class="project-tag">NLP</span>
+            </div>
+            <p class="project-description">
+              Bilingual RAG system using FastAPI and ChromaDB. Features 4-bit quantized local LLM deployment for university support.
+            </p>
+            <ul class="project-meta">
+              <li>Stack: FastAPI, React, ChromaDB</li>
             </ul>
           </article>
 
@@ -160,10 +176,36 @@
               <span class="project-tag">Backend</span>
             </div>
             <p class="project-description">
-              Go-based REST API featuring thread-safe transactions, Redis caching, and monitoring via Prometheus and Grafana.
+              REST API featuring thread-safe balance updates and worker pools. Monitored with Prometheus and Grafana.
             </p>
             <ul class="project-meta">
               <li>Stack: Go, Redis, Docker, MySQL</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <h3>PawFectMatch</h3>
+              <span class="project-tag">Full-Stack</span>
+            </div>
+            <p class="project-description">
+              ASP.NET adoption platform using the Factory Pattern. Features specialized views for shelters, admins, and users.
+            </p>
+            <ul class="project-meta">
+              <li>Stack: ASP.NET, MySQL</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <h3>TMDB Movie App</h3>
+              <span class="project-tag">Frontend</span>
+            </div>
+            <p class="project-description">
+              Movie discovery platform using NextJS and TailwindCSS. Features dynamic routing and server-side rendering.
+            </p>
+            <ul class="project-meta">
+              <li>Stack: NextJS, TailwindCSS, Docker</li>
             </ul>
           </article>
 
@@ -212,7 +254,7 @@
       <div class="container contact-inner">
         <div>
           <h2>Contact</h2>
-          <p class="section-intro">Interested in working together or want to chat about ML?</p>
+          <p class="section-intro">Interested in working together or want to chat about tech?</p>
         </div>
         <div class="contact-details">
           <p>Email: <a href="mailto:yusuf.aktas@agu.edu.tr">yusuf.aktas@agu.edu.tr</a></p>
