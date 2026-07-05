@@ -1,288 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Yusuf Aktaş | Portfolio</title>
-  <meta name="description" content="Personal portfolio of Yusuf Aktaş, a Computer Engineering Student specializing in ML and Full-Stack Development." />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Yusuf Aktaş — Portfolio</title>
+<meta name="description" content="Yusuf Aktaş — Computer Engineering student building machine learning, embedded, and full-stack systems, with a background in bioengineering." />
+<link rel="stylesheet" href="styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#top" class="logo">Yusuf<span>Aktaş</span></a>
 
-      <nav class="nav">
-        <button class="nav-toggle" aria-label="Toggle navigation">
-          <span></span>
-          <span></span>
-        </button>
-        <ul class="nav-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact" class="btn btn-small">Contact</a></li>
-        </ul>
-      </nav>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#top" class="logo">Yusuf<span>.</span></a>
+
+    <nav class="nav">
+      <ul class="nav-list" id="navList">
+        <li><a href="#about" data-nav>About</a></li>
+        <li><a href="#skills" data-nav>Skills</a></li>
+        <li><a href="#projects" data-nav>Projects</a></li>
+        <li><a href="#experience" data-nav>Experience</a></li>
+        <li><a href="#publications" data-nav>Publications</a></li>
+        <li><a href="#contact" class="btn btn-small">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div style="display:flex; align-items:center; gap: 1rem;">
+      <div class="status-chip"><span class="status-dot"></span>OPEN TO WORK</div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
     </div>
-  </header>
+  </div>
+</header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <p class="eyebrow">Hi, I'm</p>
-          <h1>Yusuf Aktaş</h1>
-          <p class="hero-subtitle">A <span class="accent">Computer Engineering Student</span> & Aspiring Software Engineer</p>
-          <p class="hero-description">
-            Passionate about <strong>Machine Learning, Cyber Security</strong>, and <strong>Full-Stack Development</strong>. 
-            I build scalable systems and data-driven ML solutions for healthcare and finance.
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <span class="hero-eyebrow reveal">Signal log / Istanbul, Türkiye</span>
+      <h1 class="reveal">Yusuf Aktaş</h1>
+      <p class="hero-subtitle reveal">
+        Senior Computer Engineering student, reading the world in
+        <span class="accent">signals</span> — from genomic variants to embedded sensors.
+      </p>
+      <p class="hero-description reveal">
+        I come from <strong>bioengineering</strong> and now build <strong>backend systems, machine
+        learning models, and embedded devices</strong> — most often pointed at healthcare problems:
+        variant classification, drug interaction analysis, clinical risk prediction.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn">View projects</a>
+        <a href="#contact" class="btn btn-outline">Get in touch</a>
+      </div>
+
+      <div class="trace-hero-wrap reveal" aria-hidden="true">
+        <div class="trace-track" id="traceTrack"></div>
+      </div>
+      <p class="trace-caption reveal">live trace — because a static photo felt like the wrong signature for this page</p>
+    </div>
+  </section>
+
+  <div class="container"><svg class="divider-trace" data-divider viewBox="0 0 1200 34" preserveAspectRatio="none"><path d="M0,17 L470,17 L482,6 L494,28 L506,17 L1200,17"/></svg></div>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-copy">
+          <span class="section-eyebrow reveal">01 — About</span>
+          <h2 class="reveal">A bioengineer who ended up writing backends</h2>
+          <p class="reveal">
+            I started in bioengineering, then moved into computer engineering — and kept the habit
+            of asking what a system is actually measuring. That's shaped almost everything I build
+            since: ML pipelines for genomic variant classification, an ILP solver for drug regimen
+            conflicts, an LSTM watching patient time-series for thrombosis risk.
           </p>
-          <div class="hero-actions">
-            <a href="#projects" class="btn">View Projects</a>
-            <a href="#contact" class="btn btn-outline">Get in Touch</a>
-          </div>
+          <p class="reveal">
+            Outside of healthcare-flavored ML, I build the more ordinary engineering muscle: Go and
+            FastAPI backends, CI/CD pipelines, and a small fleet of Raspberry Pi Pico robots that
+            track faces, avoid walls, and map rooms with ultrasound.
+          </p>
         </div>
-        <div class="hero-media">
-          <img src="photo.png" alt="Yusuf Aktaş" class="profile-photo" />
-          <p class="hero-tagline">3rd Year Student @ Abdullah Gül University</p>
+
+        <div class="spec-card reveal">
+          <h3>Record</h3>
+          <dl>
+            <div class="spec-row"><dt>Institution</dt><dd>Abdullah Gül University</dd></div>
+            <div class="spec-row"><dt>Program</dt><dd>B.Sc. Computer Engineering</dd></div>
+            <div class="spec-row"><dt>GPA</dt><dd>3.60 / 4.00</dd></div>
+            <div class="spec-row"><dt>Enrolled</dt><dd>Sep 2023 — present</dd></div>
+            <div class="spec-row"><dt>Languages</dt><dd>TR (native), EN (C1), ES (A2)</dd></div>
+            <div class="spec-row"><dt>Currently</dt><dd>Teknofest — Genetik Zeka</dd></div>
+          </dl>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="about" class="section">
-      <div class="container section-inner two-column">
-        <div>
-          <h2>About Me</h2>
-          <p>
-            I am a third-year Computer Engineering student with a unique background in Bioengineering. This transition has fueled my interest in building intelligent systems that solve complex problems at the intersection of technology and biology.
-          </p>
-          <p>
-            I specialize in developing RESTful backends, full-stack applications, and predictive ML models. I enjoy the challenge of turning data into actionable insights, whether it's through clinical optimization or decentralized technologies.
-          </p>
-        </div>
-        <div class="about-details">
+  <div class="container"><svg class="divider-trace" data-divider viewBox="0 0 1200 34" preserveAspectRatio="none"><path d="M0,17 L470,17 L482,6 L494,28 L506,17 L1200,17"/></svg></div>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow reveal">02 — Skills</span>
+        <h2 class="reveal">Working set</h2>
+        <p class="reveal">The tools that show up across most of what I build.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <h3>Programming</h3>
           <ul>
-            <li><span>Location:</span> Istanbul / Kayseri, Türkiye</li>
-            <li><span>GPA:</span> 3.65 / 4.00</li>
-            <li><span>Education:</span> BSc Computer Engineering (English)</li>
-            <li><span>Languages:</span> Turkish (Native), English (C1), Spanish (A2)</li>
+            <li>Python — Pandas, NumPy, Scikit-learn</li>
+            <li>Go</li>
+            <li>SQL — MySQL, PostgreSQL</li>
+            <li>Java, JavaScript</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Machine learning</h3>
+          <ul>
+            <li>XGBoost, LightGBM, Random Forest, TabNet</li>
+            <li>LSTM, NLP (BioBERT)</li>
+            <li>Computer vision</li>
+            <li>Logistic regression, decision trees</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Backend &amp; tooling</h3>
+          <ul>
+            <li>REST APIs, Docker</li>
+            <li>ChromaDB, CI/CD</li>
+            <li>Git, Postman</li>
+            <li>Prometheus, Grafana</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Hardware &amp; embedded</h3>
+          <ul>
+            <li>Raspberry Pi 4 &amp; Pico 2W</li>
+            <li>MicroPython, C++</li>
+            <li>OpenCV, Mediapipe</li>
+            <li>Servo &amp; ultrasonic control</li>
           </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="skills" class="section section-alt">
-      <div class="container">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <h3>Programming</h3>
-            <ul>
-              <li>Python (Pandas, NumPy, Scikit-learn)</li>
-              <li>SQL (MySQL, PostgreSQL)</li>
-              <li>C#, Java, JavaScript</li>
-              <li>Solidity</li>
-            </ul>
+  <div class="container"><svg class="divider-trace" data-divider viewBox="0 0 1200 34" preserveAspectRatio="none"><path d="M0,17 L470,17 L482,6 L494,28 L506,17 L1200,17"/></svg></div>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow reveal">03 — Projects</span>
+        <h2 class="reveal">Selected builds</h2>
+        <p class="reveal">Mostly healthcare-adjacent ML, a few embedded robots, and the full-stack apps in between.</p>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-header"><h3>Stroke Prediction System</h3><span class="project-tag">ML</span></div>
+          <p class="project-description">Compares seven classifiers across a 5,110-record clinical set and a 70k-record symptom set with 19.5:1 class imbalance. Deployed on Streamlit with SHAP explanations.</p>
+          <p class="project-meta"><b>Stack:</b> Python, XGBoost, CatBoost, Streamlit, SHAP</p>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-header"><h3>Clinical Drug Regimen Optimizer</h3><span class="project-tag">Healthcare</span></div>
+          <p class="project-description">ILP and greedy approximation optimize multi-drug regimens, minimize polypharmacy, and flag CYP450 metabolic conflicts, with BioBERT parsing clinical text.</p>
+          <p class="project-meta"><b>Stack:</b> Python, ILP, BioBERT</p>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-header"><h3>VTE Prediction Model</h3><span class="project-tag">ML</span></div>
+          <p class="project-description">LSTM model reading encrypted patient time-series to forecast venous thromboembolism risk categories per patient.</p>
+          <p class="project-meta"><b>Stack:</b> Python, LSTM</p>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-header"><h3>AGU RAG Chatbot</h3><span class="project-tag">NLP</span></div>
+          <p class="project-description">Bilingual (EN/TR) retrieval-augmented assistant with a 4-bit quantized local LLM and ChromaDB, built for context-aware university support.</p>
+          <p class="project-meta"><b>Stack:</b> FastAPI, React, ChromaDB</p>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-header"><h3>Banking Application Backend</h3><span class="project-tag">Backend</span></div>
+          <p class="project-description">Go REST API with Redis caching, thread-safe balance operations, Docker containers, and Prometheus/Grafana observability.</p>
+          <p class="project-meta"><b>Stack:</b> Go, Redis, Docker, Grafana</p>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-header"><h3>Face &amp; Gesture Tracking</h3><span class="project-tag">Embedded</span></div>
+          <p class="project-description">Real-time pan-tilt camera rig on a Raspberry Pi 4, driven by OpenCV and Mediapipe face/hand recognition, actuated through a Pico 2W.</p>
+          <p class="project-meta"><b>Stack:</b> Raspberry Pi, OpenCV, Mediapipe</p>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-header"><h3>Ultrasonic Pan-Tilt Radar</h3><span class="project-tag">Embedded</span></div>
+          <p class="project-description">Spatial mapping device on a Pico 2W with servo motors and ultrasonic sensors, visualizing distance data in real time.</p>
+          <p class="project-meta"><b>Stack:</b> MicroPython, Pico 2W</p>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-header"><h3>Wi-Fi Obstacle-Avoiding Robot</h3><span class="project-tag">Embedded</span></div>
+          <p class="project-description">Remote-controlled rover on a Pico 2W, driven over a local IP web interface, with automatic obstacle braking.</p>
+          <p class="project-meta"><b>Stack:</b> MicroPython, Pico 2W</p>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-header"><h3>Vehicle History Tracker</h3><span class="project-tag">Blockchain</span></div>
+          <p class="project-description">A dApp recording and verifying a vehicle's lifecycle events on a private Ethereum network.</p>
+          <p class="project-meta"><b>Stack:</b> Solidity, React, Truffle</p>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-header"><h3>Animal Shelter Platform</h3><span class="project-tag">Full-stack</span></div>
+          <p class="project-description">ASP.NET and MySQL platform for adoption tracking, appointment scheduling, and authenticated shelter/admin/user views.</p>
+          <p class="project-meta"><b>Stack:</b> ASP.NET, MySQL</p>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-header"><h3>Facial Expression Recognition</h3><span class="project-tag">Vision</span></div>
+          <p class="project-description">Compares a custom CNN against a partially and a fully fine-tuned MobileNetV2 on the FER2013 dataset.</p>
+          <p class="project-meta"><b>Stack:</b> CNN, MobileNetV2</p>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-header"><h3>ModelVerse</h3><span class="project-tag">Mobile</span></div>
+          <p class="project-description">Android app unifying several LLM APIs behind one chat interface, with Firebase auth and Firestore-backed history.</p>
+          <p class="project-meta"><b>Stack:</b> Android, Firebase</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><svg class="divider-trace" data-divider viewBox="0 0 1200 34" preserveAspectRatio="none"><path d="M0,17 L470,17 L482,6 L494,28 L506,17 L1200,17"/></svg></div>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow reveal">04 — Experience</span>
+        <h2 class="reveal">Where I've worked</h2>
+      </div>
+
+      <div class="timeline" id="timeline">
+        <svg class="timeline-line" viewBox="0 0 20 100" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M10,0 L10,28 L4,32 L16,38 L10,42 L10,60 L4,64 L16,70 L10,74 L10,100"/>
+          <path class="active-path" d="M10,0 L10,28 L4,32 L16,38 L10,42 L10,60 L4,64 L16,70 L10,74 L10,100"/>
+        </svg>
+
+        <article class="timeline-item reveal">
+          <span class="timeline-meta">Aug 2025 — Sep 2025 · Istanbul</span>
+          <h3>Software Developer Intern — Insider</h3>
+          <ul>
+            <li>Built a RESTful banking backend in Go with authentication, rate limiting, and a custom router.</li>
+            <li>Shipped a Next.js movie discovery app integrating the TMDB API.</li>
+            <li>Worked within Agile/Scrum teams aligned to SaaS OKRs and KPIs.</li>
+          </ul>
+        </article>
+
+        <article class="timeline-item reveal">
+          <span class="timeline-meta">Oct 2024 — Jun 2025 · Remote</span>
+          <h3>Machine Learning Intern — TEYDEB</h3>
+          <ul>
+            <li>Built multi-class models (XGBoost, Random Forest, LightGBM, TabNet) reaching 86% accuracy for ACMG/AMP variant classification.</li>
+            <li>Ran large-scale preprocessing and feature engineering across genomic datasets.</li>
+            <li>Reviewed literature to refine model accuracy and evaluation metrics.</li>
+          </ul>
+        </article>
+
+        <article class="timeline-item reveal">
+          <span class="timeline-meta">Dec 2023 — Jun 2024 · Remote</span>
+          <h3>Software Developer Intern — CTOLab</h3>
+          <ul>
+            <li>Automated GitLab CI/CD pipelines for the LingoEdit platform, improving deployment reliability.</li>
+            <li>Managed Git branching and merge workflows across the team.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><svg class="divider-trace" data-divider viewBox="0 0 1200 34" preserveAspectRatio="none"><path d="M0,17 L470,17 L482,6 L494,28 L506,17 L1200,17"/></svg></div>
+
+  <!-- ============ PUBLICATIONS ============ -->
+  <section id="publications" class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow reveal">05 — Publications</span>
+        <h2 class="reveal">Research in review</h2>
+      </div>
+
+      <div class="pub-list">
+        <div class="pub-card reveal">
+          <span class="pub-status">Under review</span>
+          <div>
+            <h3>A Simulation-Driven Multi-Objective Optimization Framework for Drug Recommendation and Interaction Analysis</h3>
+            <span class="pub-venue">Yusuf Aktaş, Gökhan Bakal · Annals of Operations Research (Springer) · Feb 2026 · ANOR-D-26-01383</span>
+            <p>Submitted to Annals of Operations Research; currently with the editor.</p>
           </div>
+        </div>
 
-          <div class="skill-card">
-            <h3>Machine Learning</h3>
-            <ul>
-              <li>Logistic Regression, Decision Tree</li>
-              <li>XGBoost, Random Forest</li>
-              <li>LSTM, TabNet, LightGBM</li>
-              <li>NLP (BioBERT), RAG Systems</li>
-            </ul>
-          </div>
-
-          <div class="skill-card">
-            <h3>Frameworks & Tools</h3>
-            <ul>
-              <li>React, Flutter</li>
-              <li>ASP.NET, FastAPI, Spring Boot</li>
-              <li>Docker, Git, Prometheus</li>
-              <li>Truffle, Ganache</li>
-            </ul>
+        <div class="pub-card reveal">
+          <span class="pub-status">Under review</span>
+          <div>
+            <h3>FEDBIOJEPA: A Self-Supervised Federated Knowledge Graph Framework for Computational Drug Repositioning</h3>
+            <span class="pub-venue">Yusuf Aktaş, Gökhan Bakal · ASYU 2026 Conference · Jun 2026 · Paper ID 300</span>
+            <p>A three-stage framework combining federated knowledge graph embeddings, self-supervised graph representation learning, and clinical code decoding.</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="projects" class="section">
-      <div class="container">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-          
-          <article class="project-card">
-            <div class="project-header">
-              <h3>Clinical Drug Optimizer</h3>
-              <span class="project-tag">Healthcare AI</span>
-            </div>
-            <p class="project-description">
-              Clinical support system using ILP and NLP (BioBERT) to optimize multi-drug regimens and detect CYP450 metabolic conflicts.
-            </p>
-            <ul class="project-meta">
-              <li>Stack: Python, BioBERT, ILP</li>
-            </ul>
-          </article>
+  <div class="container"><svg class="divider-trace" data-divider viewBox="0 0 1200 34" preserveAspectRatio="none"><path d="M0,17 L470,17 L482,6 L494,28 L506,17 L1200,17"/></svg></div>
 
-          <article class="project-card">
-            <div class="project-header">
-              <h3>ModelVerse</h3>
-              <span class="project-tag">Mobile AI</span>
-            </div>
-            <p class="project-description">
-              Flutter chat application integrating Gemini, OpenAI, and Mistral. Supports multi-modal inputs and uses Firebase for authentication.
-            </p>
-            <ul class="project-meta">
-              <li>Stack: Flutter, Firebase, LLM APIs</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <div class="project-header">
-              <h3>ChainTrack</h3>
-              <span class="project-tag">Blockchain</span>
-            </div>
-            <p class="project-description">
-              Decentralized app (dApp) for vehicle history tracking. Uses Solidity smart contracts to verify events on an Ethereum network.
-            </p>
-            <ul class="project-meta">
-              <li>Stack: Solidity, React, Truffle</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <div class="project-header">
-              <h3>AGU RAG Chatbot</h3>
-              <span class="project-tag">NLP</span>
-            </div>
-            <p class="project-description">
-              Bilingual RAG system using FastAPI and ChromaDB. Features 4-bit quantized local LLM deployment for university support.
-            </p>
-            <ul class="project-meta">
-              <li>Stack: FastAPI, React, ChromaDB</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <div class="project-header">
-              <h3>Banking App Backend</h3>
-              <span class="project-tag">Backend</span>
-            </div>
-            <p class="project-description">
-              REST API featuring thread-safe balance updates and worker pools. Monitored with Prometheus and Grafana.
-            </p>
-            <ul class="project-meta">
-              <li>Stack: Go, Redis, Docker, MySQL</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <div class="project-header">
-              <h3>PawFectMatch</h3>
-              <span class="project-tag">Full-Stack</span>
-            </div>
-            <p class="project-description">
-              ASP.NET adoption platform using the Factory Pattern. Features specialized views for shelters, admins, and users.
-            </p>
-            <ul class="project-meta">
-              <li>Stack: ASP.NET, MySQL</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <div class="project-header">
-              <h3>TMDB Movie App</h3>
-              <span class="project-tag">Frontend</span>
-            </div>
-            <p class="project-description">
-              Movie discovery platform using NextJS and TailwindCSS. Features dynamic routing and server-side rendering.
-            </p>
-            <ul class="project-meta">
-              <li>Stack: NextJS, TailwindCSS, Docker</li>
-            </ul>
-          </article>
-
+  <!-- ============ CERTIFICATIONS + LANGUAGES ============ -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="strip-grid">
+        <div class="strip-card reveal">
+          <h3>Certifications</h3>
+          <ul>
+            <li><span>Industry-Oriented PostgreSQL Training</span><span>Udemy, 2026</span></li>
+            <li><span>Google Analytics Professional Certificate</span><span>Google, 2025</span></li>
+            <li><span>CCNA: Introduction to Networks</span><span>Cisco, 2024</span></li>
+            <li><span>Introduction to Data Science</span><span>Cisco, 2024</span></li>
+            <li><span>Data Scientist Mini Bootcamp</span><span>Miuul, 2024</span></li>
+          </ul>
+        </div>
+        <div class="strip-card reveal">
+          <h3>Competitions</h3>
+          <ul>
+            <li><span>Genetik Zeka — Structural protein embeddings for explainable pathogenicity prediction</span><span>Teknofest, 2026</span></li>
+          </ul>
+          <h3 style="margin-top:1.6rem;">Languages</h3>
+          <ul>
+            <li><span>Turkish</span><span>Native</span></li>
+            <li><span>English</span><span>C1</span></li>
+            <li><span>Spanish</span><span>A2</span></li>
+          </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="experience" class="section section-alt">
-      <div class="container">
-        <h2>Experience</h2>
-        <div class="timeline">
-          
-          <article class="timeline-item">
-            <h3>Software Developer Intern @ Insider</h3>
-            <p class="timeline-meta">Aug 2025 - Sep 2025 · Istanbul</p>
-            <ul>
-              <li>Developed RESTful banking backend using Go with rate limiting and authentication.</li>
-              <li>Built a Next.js movie discovery app integrating TMDB API.</li>
-              <li>Worked in Agile teams focusing on SaaS KPIs and OKRs.</li>
-            </ul>
-          </article>
-
-          <article class="timeline-item">
-            <h3>Machine Learning Intern @ TEYDEB</h3>
-            <p class="timeline-meta">Oct 2024 - Jun 2025 · Remote</p>
-            <ul>
-              <li>Developed ML models (XGBoost, TabNet) for variant classification with 86% accuracy.</li>
-              <li>Performed large-scale feature engineering on genomic datasets.</li>
-            </ul>
-          </article>
-
-          <article class="timeline-item">
-            <h3>Internship Trainee @ CTOLab</h3>
-            <p class="timeline-meta">Dec 2023 - Jun 2024 · Remote</p>
-            <ul>
-              <li>Automated GitLab CI/CD pipelines to improve deployment efficiency.</li>
-              <li>Collaborated on the LingoEdit platform using advanced Git workflows.</li>
-            </ul>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container contact-inner">
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-inner reveal">
         <div>
-          <h2>Contact</h2>
-          <p class="section-intro">Interested in working together or want to chat about tech?</p>
+          <span class="section-eyebrow">06 — Contact</span>
+          <h2>Let's talk</h2>
+          <p>Open to internships, research collaborations, and interesting problems in ML or systems.</p>
         </div>
         <div class="contact-details">
           <p>Email: <a href="mailto:yusuf.aktas@agu.edu.tr">yusuf.aktas@agu.edu.tr</a></p>
+          <p>Phone: <a href="tel:+905521616602">+90 552 161 66 02</a></p>
           <p>
-            Social:
-            <a href="https://github.com/yusuf4ktas" target="_blank">GitHub</a> ·
-            <a href="https://linkedin.com/in/yusuf-aktass" target="_blank">LinkedIn</a>
+            <a href="https://github.com/yusuf4ktas" target="_blank" rel="noopener">GitHub</a> ·
+            <a href="https://linkedin.com/in/yusuf-aktass" target="_blank" rel="noopener">LinkedIn</a>
           </p>
         </div>
       </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Yusuf Aktaş. All rights reserved.</p>
     </div>
-  </footer>
+  </section>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-    const navToggle = document.querySelector(".nav-toggle");
-    const navList = document.querySelector(".nav-list");
-    if (navToggle && navList) {
-      navToggle.addEventListener("click", () => {
-        navList.classList.toggle("nav-open");
-      });
-    }
-  </script>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Yusuf Aktaş — built with a bit too much fondness for oscilloscopes.</p>
+    <p>Istanbul, Türkiye</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
